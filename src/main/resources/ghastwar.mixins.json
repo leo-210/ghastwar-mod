@@ -1,0 +1,18 @@
+{
+	"required": true,
+	"package": "me.leo21.ghastwar.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"BuffGhast",
+		"DisableGhastRegen",
+		"DisableGhastTemptGoalForOtherTeams",
+		"DisableOtherTeamsPassengers",
+		"GhastDamageOutOfZone"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

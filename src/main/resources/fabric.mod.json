@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "ghastwar",
+	"version": "${version}",
+	"name": "GhastWar",
+	"description": "A server side mod for the GhastWar game",
+	"authors": [
+		"Léo-21"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ghastwar/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.leo21.ghastwar.GhastWar"
+		]
+	},
+	"mixins": [
+		"ghastwar.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.7",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
