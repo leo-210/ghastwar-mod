@@ -14,8 +14,6 @@ import java.util.Objects;
 
 @Mixin(HappyGhastEntity.class)
 public class GhastDamageOutOfZone {
-    private final int highestAllowed = 200;
-
     private int sendBorderMsgCounter = 0;
     private int sendHeightMsgCounter = 0;
 
@@ -46,7 +44,7 @@ public class GhastDamageOutOfZone {
         } else {
             sendBorderMsgCounter = 0;
         }
-        if (pos.getY() > highestAllowed) {
+        if (pos.getY() > 200) {
             if (sendHeightMsgCounter % 5 == 0) {
                 t.damage(Objects.requireNonNull(t.getServer()).getWorld(t.getWorld().getRegistryKey()), t.getWorld().getDamageSources().outOfWorld(), 1);
             }
