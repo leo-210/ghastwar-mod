@@ -25,7 +25,7 @@ public class GhastWar implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Mod initialized!");
 	}
 
 	public static void sendTeamMsg(Text msg, Team team, MinecraftServer server) {
