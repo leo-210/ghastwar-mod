@@ -1,0 +1,1 @@
+function rumble:event/map/shrink with storage rumble:config z1

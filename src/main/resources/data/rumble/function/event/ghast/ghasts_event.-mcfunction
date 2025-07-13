@@ -1,0 +1,41 @@
+tellraw @a {"text":"[Event]","color":"gold","text":" Happy Ghasts !","color":"yellow"}
+
+tag @r[team=e1] add ghast_o
+tag @r[team=e2] add ghast_o
+tag @r[team=e3] add ghast_o
+tag @r[team=e4] add ghast_o
+tag @r[team=e5] add ghast_o
+tag @r[team=e6] add ghast_o
+tag @r[team=e7] add ghast_o
+tag @r[team=e8] add ghast_o
+tag @r[team=e9] add ghast_o
+tag @r[team=e10] add ghast_o
+
+# Envoie un message personnalisé au joueur
+tellraw @a[tag=ghast_o] {"text":"Tu as reçu l'Happy Ghast de ton équipe, ne le perds pas !","color":"yellow"}
+# Joue un son de feu d'artifice
+
+# Invoque un feu d'artifice à la position du joueur
+# execute at @a[tag=ghast_o] run summon firework_rocket ~ ~1 ~ {LifeTime:0,FireworksItem:{id:firework_rocket,components:{fireworks:{explosions:[{has_twinkle:1b,shape:small_ball,colors:[I;3847130,16383998,11546150],fade_colors:[I;16701501]}]}}}}
+
+# donner les ghasts
+
+give @a[tag=ghast_o,team=e1] happy_ghast_spawn_egg[enchantment_glint_override=true,entity_data={id:"minecraft:happy_ghast",Team:"e1",Health:60f,CustomName:{"color":"aqua","text":"Marcel"},equipment:{body:{id:"minecraft:light_blue_harness",count:1}},drop_chances:{body:0.000},active_effects:[{id:"minecraft:glowing",amplifier:1,duration:-1,show_particles:0b,show_icon:0b,ambient:1b}],attributes:[{id:"minecraft:camera_distance",base:8},{id:"minecraft:max_health",base:60},{id:"minecraft:waypoint_transmit_range",base:1000},{id:"minecraft:flying_speed",base:0.07}]},custom_name={"color":"aqua","text":"Marcel Egg"}] 1
+
+give @a[tag=ghast_o,team=e2] happy_ghast_spawn_egg[enchantment_glint_override=true,entity_data={id:"minecraft:happy_ghast",Team:"e2",Health:60f,CustomName:{"color":"blue","text":"Bob"},equipment:{body:{id:"minecraft:blue_harness",count:1}},drop_chances:{body:0.000},active_effects:[{id:"minecraft:glowing",amplifier:1,duration:-1,show_particles:0b,show_icon:0b,ambient:1b}],attributes:[{id:"minecraft:camera_distance",base:8},{id:"minecraft:max_health",base:60},{id:"minecraft:waypoint_transmit_range",base:1000},{id:"minecraft:flying_speed",base:0.07}]},custom_name={"color":"blue","text":"Bob Egg"}] 1
+
+give @a[tag=ghast_o,team=e3] happy_ghast_spawn_egg[enchantment_glint_override=true,entity_data={id:"minecraft:happy_ghast",Team:"e3",Health:60f,CustomName:{"color":"green","text":"Pierre"},equipment:{body:{id:"minecraft:lime_harness",count:1}},drop_chances:{body:0.000},active_effects:[{id:"minecraft:glowing",amplifier:1,duration:-1,show_particles:0b,show_icon:0b,ambient:1b}],attributes:[{id:"minecraft:camera_distance",base:8},{id:"minecraft:max_health",base:60},{id:"minecraft:waypoint_transmit_range",base:1000},{id:"minecraft:flying_speed",base:0.07}]},custom_name={"color":"green","text":"Pierre Egg"}] 1
+
+give @a[tag=ghast_o,team=e4] happy_ghast_spawn_egg[enchantment_glint_override=true,entity_data={id:"minecraft:happy_ghast",Team:"e4",Health:60f,CustomName:{"color":"yellow","text":"René"},equipment:{body:{id:"minecraft:yellow_harness",count:1}},drop_chances:{body:0.000},active_effects:[{id:"minecraft:glowing",amplifier:1,duration:-1,show_particles:0b,show_icon:0b,ambient:1b}],attributes:[{id:"minecraft:camera_distance",base:8},{id:"minecraft:max_health",base:60},{id:"minecraft:waypoint_transmit_range",base:1000},{id:"minecraft:flying_speed",base:0.07}]},custom_name={"color":"yellow","text":"René Egg"}] 1
+
+give @a[tag=ghast_o,team=e5] happy_ghast_spawn_egg[enchantment_glint_override=true,entity_data={id:"minecraft:happy_ghast",Team:"e5",Health:60f,CustomName:{"color":"gold","text":"Claude"},equipment:{body:{id:"minecraft:orange_harness",count:1}},drop_chances:{body:0.000},active_effects:[{id:"minecraft:glowing",amplifier:1,duration:-1,show_particles:0b,show_icon:0b,ambient:1b}],attributes:[{id:"minecraft:camera_distance",base:8},{id:"minecraft:max_health",base:60},{id:"minecraft:waypoint_transmit_range",base:1000},{id:"minecraft:flying_speed",base:0.07}]},custom_name={"color":"gold","text":"Claude Egg"}] 1
+
+give @a[tag=ghast_o,team=e6] happy_ghast_spawn_egg[enchantment_glint_override=true,entity_data={id:"minecraft:happy_ghast",Team:"e6",Health:60f,CustomName:{"color":"red","text":"Alain"},equipment:{body:{id:"minecraft:red_harness",count:1}},drop_chances:{body:0.000},active_effects:[{id:"minecraft:glowing",amplifier:1,duration:-1,show_particles:0b,show_icon:0b,ambient:1b}],attributes:[{id:"minecraft:camera_distance",base:8},{id:"minecraft:max_health",base:60},{id:"minecraft:waypoint_transmit_range",base:1000},{id:"minecraft:flying_speed",base:0.07}]},custom_name={"color":"red","text":"Alain Egg"}] 1
+
+give @a[tag=ghast_o,team=e7] happy_ghast_spawn_egg[enchantment_glint_override=true,entity_data={id:"minecraft:happy_ghast",Team:"e7",Health:60f,CustomName:{"color":"light_purple","text":"Claire"},equipment:{body:{id:"minecraft:magenta_harness",count:1}},drop_chances:{body:0.000},active_effects:[{id:"minecraft:glowing",amplifier:1,duration:-1,show_particles:0b,show_icon:0b,ambient:1b}],attributes:[{id:"minecraft:camera_distance",base:8},{id:"minecraft:max_health",base:60},{id:"minecraft:waypoint_transmit_range",base:1000},{id:"minecraft:flying_speed",base:0.07}]},custom_name={"color":"light_purple","text":"Claire Egg"}] 1
+
+give @a[tag=ghast_o,team=e8] happy_ghast_spawn_egg[enchantment_glint_override=true,entity_data={id:"minecraft:happy_ghast",Team:"e8",Health:60f,CustomName:{"color":"dark_purple","text":"Camille"},equipment:{body:{id:"minecraft:purple_harness",count:1}},drop_chances:{body:0.000},active_effects:[{id:"minecraft:glowing",amplifier:1,duration:-1,show_particles:0b,show_icon:0b,ambient:1b}],attributes:[{id:"minecraft:camera_distance",base:8},{id:"minecraft:max_health",base:60},{id:"minecraft:waypoint_transmit_range",base:1000},{id:"minecraft:flying_speed",base:0.07}]},custom_name={"color":"dark_purple","text":"Camille Egg"}] 1
+
+give @a[tag=ghast_o,team=e9] happy_ghast_spawn_egg[enchantment_glint_override=true,entity_data={id:"minecraft:happy_ghast",Team:"e9",Health:60f,CustomName:{"color":"dark_gray","text":"Thierry"},equipment:{body:{id:"minecraft:gray_harness",count:1}},drop_chances:{body:0.000},active_effects:[{id:"minecraft:glowing",amplifier:1,duration:-1,show_particles:0b,show_icon:0b,ambient:1b}],attributes:[{id:"minecraft:camera_distance",base:8},{id:"minecraft:max_health",base:60},{id:"minecraft:waypoint_transmit_range",base:1000},{id:"minecraft:flying_speed",base:0.07}]},custom_name={"color":"dark_gray","text":"Thierry Egg"}] 1
+
+give @a[tag=ghast_o,team=e10] happy_ghast_spawn_egg[enchantment_glint_override=true,entity_data={id:"minecraft:happy_ghast",Team:"e10",Health:60f,CustomName:{"color":"dark_green","text":"Jean Pierre"},equipment:{body:{id:"minecraft:green_harness",count:1}},drop_chances:{body:0.000},active_effects:[{id:"minecraft:glowing",amplifier:1,duration:-1,show_particles:0b,show_icon:0b,ambient:1b}],attributes:[{id:"minecraft:camera_distance",base:8},{id:"minecraft:max_health",base:60},{id:"minecraft:waypoint_transmit_range",base:1000},{id:"minecraft:flying_speed",base:0.07}]},custom_name={"color":"dark_green","text":"Jean Pierre Egg"}] 1

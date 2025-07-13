@@ -1,0 +1,122 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Choix Équipe",
+    "color": "white",
+    "bold": true
+  },
+  "can_close_with_escape": false,
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "text": "Équipe 1",
+        "color": "aqua",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger chooseTeam set 1"
+      }
+    },
+    {
+      "label": {
+        "text": "Équipe 6",
+        "color": "red",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger chooseTeam set 6"
+      }
+    },
+    {
+      "label": {
+        "text": "Équipe 2",
+        "color": "blue",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger chooseTeam set 2"
+      }
+    },
+    {
+      "label": {
+        "text": "Équipe 7",
+        "color": "light_purple",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger chooseTeam set 7"
+      }
+    },
+    {
+      "label": {
+        "text": "Équipe 3",
+        "color": "green",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger chooseTeam set 3"
+      }
+    },
+    {
+      "label": {
+        "text": "Équipe 8",
+        "color": "dark_purple",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger chooseTeam set 8"
+      }
+    },
+    {
+      "label": {
+        "text": "Équipe 4",
+        "color": "yellow",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger chooseTeam set 4"
+      }
+    },
+    {
+      "label": {
+        "text": "Équipe 9",
+        "color": "dark_gray",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger chooseTeam set 9"
+      }
+    },
+    {
+      "label": {
+        "text": "Équipe 5",
+        "color": "gold",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger chooseTeam set 5"
+      }
+    },
+    {
+      "label": {
+        "text": "Équipe 10",
+        "color": "dark_green",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger chooseTeam set 10"
+      }
+    }
+  ]
+}

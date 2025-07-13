@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "use_item": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": { "inv_spell": true }
+          }
+        }
+      }
+    }
+  },
+  "rewards": { "function": "cargo:citem/inv_spell0" }
+}

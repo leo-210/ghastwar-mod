@@ -1,0 +1,10 @@
+bossbar remove ghast1
+bossbar remove ghast2
+bossbar remove ghast3
+bossbar remove ghast4
+bossbar remove ghast5
+bossbar remove ghast6
+bossbar remove ghast7
+bossbar remove ghast8
+bossbar remove ghast9
+bossbar remove ghast10

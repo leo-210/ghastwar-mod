@@ -1,0 +1,151 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:flow_banner_pattern",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 3
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:max_stack_size": 3,
+                "minecraft:consumable": {
+                  "consume_seconds": 3,
+                  "animation": "bow",
+                  "sound": "block.amethyst_block.resonate",
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:invisibility",
+                          "amplifier": 1,
+                          "duration": 900,
+                          "show_particles": false,
+                          "show_icon": false,
+                          "ambient": true
+                        }
+                      ]
+                    },
+                    {
+                      "type": "minecraft:play_sound",
+                      "sound": "entity.warden.sonic_boom"
+                    }
+                  ]
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 60
+                },
+                "minecraft:custom_data": {
+                  "inv_spell": true
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "#ADADAD",
+                  "italic": false,
+                  "text": "S"
+                },
+                {
+                  "color": "#A7A7A7",
+                  "text": "o"
+                },
+                {
+                  "color": "#A0A0A0",
+                  "text": "r"
+                },
+                {
+                  "color": "#9A9A9A",
+                  "text": "t "
+                },
+                {
+                  "color": "#949493",
+                  "text": "d"
+                },
+                {
+                  "color": "#8D8D8D",
+                  "text": "e "
+                },
+                {
+                  "color": "#878786",
+                  "text": "D"
+                },
+                {
+                  "color": "#808080",
+                  "text": "i"
+                },
+                {
+                  "color": "#7A7A79",
+                  "text": "s"
+                },
+                {
+                  "color": "#808080",
+                  "text": "p"
+                },
+                {
+                  "color": "#878786",
+                  "text": "e"
+                },
+                {
+                  "color": "#8D8D8D",
+                  "text": "r"
+                },
+                {
+                  "color": "#949493",
+                  "text": "s"
+                },
+                {
+                  "color": "#9A9A9A",
+                  "text": "i"
+                },
+                {
+                  "color": "#A0A0A0",
+                  "text": "o"
+                },
+                {
+                  "color": "#ADADAD",
+                  "text": "n"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "bold": false,
+                  "color": "white",
+                  "italic": false,
+                  "text": "Invisibilité et rapidité pendant"
+                },
+                [
+                  {
+                    "color": "green",
+                    "italic": false,
+                    "text": "45"
+                  },
+                  {
+                    "color": "white",
+                    "text": " secondes pour toute l'équipe."
+                  }
+                ]
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

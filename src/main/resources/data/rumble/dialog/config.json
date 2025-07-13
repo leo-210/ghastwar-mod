@@ -1,0 +1,177 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "Start Time Event (T [s])",
+    "bold": true
+  },
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "nryco"
+        },
+        "minecraft:enchantment_glint_override": true
+      },
+      "count": 1
+    },
+    "show_tooltip": false
+  },
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "imo",
+      "width": 200,
+      "label": {
+        "text": "IMO"
+      },
+      "start": 300,
+      "end": 7200,
+      "step": 300,
+      "initial": 5400
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "start_zone1",
+      "width": 200,
+      "label": {
+        "text": "START ZONE 1"
+      },
+      "start": 300,
+      "end": 7200,
+      "step": 300,
+      "initial": 5400
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "shrink_zone1",
+      "width": 200,
+      "label": {
+        "text": "DUREE ZONE 1"
+      },
+      "start": 300,
+      "end": 7200,
+      "step": 300,
+      "initial": 3600
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "start_zone2",
+      "width": 200,
+      "label": {
+        "text": "START ZONE 2"
+      },
+      "start": 600,
+      "end": 10800,
+      "step": 300,
+      "initial": 9000
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "shrink_zone2",
+      "width": 200,
+      "label": {
+        "text": "DUREE ZONE 2"
+      },
+      "start": 300,
+      "end": 7200,
+      "step": 300,
+      "initial": 3600
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "cargo",
+      "width": 200,
+      "label": {
+        "text": "START CARGO",
+        "type": "text",
+        "color": "#b0a530"
+      },
+      "start": 300.0,
+      "end": 10800.0,
+      "step": 300.0,
+      "initial": 9000.0
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "t0",
+      "width": 200,
+      "label": {
+        "text": "Taille 1 MAP",
+        "type": "text",
+        "color": "#19e00b"
+      },
+      "start": 128,
+      "end": 2048,
+      "step": 128,
+      "initial": 2048
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "t1",
+      "width": 200,
+      "label": {
+        "text": "Taille 2 MAP",
+        "type": "text",
+        "color": "#19e00b"
+      },
+      "start": 64,
+      "end": 512,
+      "step": 64,
+      "initial": 512
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "t2",
+      "width": 200,
+      "label": {
+        "text": "Taille 3 MAP",
+        "type": "text",
+        "color": "#19e00b"
+      },
+      "start": 32,
+      "end": 128,
+      "step": 32,
+      "initial": 128
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "spread",
+      "width": 200,
+      "label": {
+        "text": "Spread Teams",
+        "type": "text",
+        "color": "#882222"
+      },
+      "start": 20,
+      "end": 500,
+      "step": 20,
+      "initial": 200
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "spread_cargo",
+      "width": 200,
+      "label": {
+        "text": "Spread Cargo",
+        "type": "text",
+        "color": "#882222"
+      },
+      "start": 100,
+      "end": 1000,
+      "step": 100,
+      "initial": 500
+    }
+  ],
+  "can_close_with_escape": true,
+  "after_action": "close",
+  "action": {
+    "label": "Submit",
+    "width": 100,
+    "action": {
+      "type": "dynamic/run_command",
+      "template": "function rumble:event/map/config {imo: $(imo), start_zone1: $(start_zone1), shrink_zone1: $(shrink_zone1), start_zone2: $(start_zone2), shrink_zone2: $(shrink_zone2), cargo: $(cargo), t0: $(t0),t1: $(t1), t2: $(t2), spread: $(spread), spread_cargo : $(spread_cargo)}"
+    }
+  }
+}

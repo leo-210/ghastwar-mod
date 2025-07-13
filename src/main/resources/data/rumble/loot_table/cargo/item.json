@@ -1,0 +1,167 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:punch": 1,
+                  "rumble:unmount": 1
+                },
+                "minecraft:max_damage": 7
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "italic": false,
+                  "color": "#00FF1A",
+                  "text": "B"
+                },
+                {
+                  "color": "#12E631",
+                  "text": "o"
+                },
+                {
+                  "color": "#24CC48",
+                  "text": "w "
+                },
+                {
+                  "color": "#36B35F",
+                  "text": "E"
+                },
+                {
+                  "color": "#489976",
+                  "text": "j"
+                },
+                {
+                  "color": "#5A808D",
+                  "text": "e"
+                },
+                {
+                  "color": "#6B66A3",
+                  "text": "c"
+                },
+                {
+                  "color": "#7D4DBA",
+                  "text": "t"
+                },
+                {
+                  "color": "#8F33D1",
+                  "text": "o"
+                },
+                {
+                  "color": "#B300FF",
+                  "text": "r"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "color": "white",
+                  "italic": false,
+                  "text": "- Snow Falling"
+                },
+                {
+                  "color": "white",
+                  "italic": false,
+                  "text": "- Joueurs touchés tombent de leur ghast "
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:mace",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 5,
+                "minecraft:enchantments": {
+                  "minecraft:wind_burst": 3
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "white",
+                  "italic": false,
+                  "text": "Mace du "
+                },
+                {
+                  "color": "#0800FF",
+                  "text": "S"
+                },
+                {
+                  "color": "#6B66FF",
+                  "text": "h"
+                },
+                {
+                  "color": "#CECCFF",
+                  "text": "a"
+                },
+                {
+                  "color": "#FFCCCC",
+                  "text": "k"
+                },
+                {
+                  "color": "#FF0000",
+                  "text": "a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 1,
+          "value": "rumble:combo_trident",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 1,
+          "value": "rumble:inv_spell",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

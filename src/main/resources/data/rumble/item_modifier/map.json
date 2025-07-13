@@ -1,0 +1,8 @@
+{
+  "function": "minecraft:exploration_map",
+  "destination": "minecraft:on_trial_chambers_maps",
+  "decoration": "minecraft:trial_chambers",
+  "search_radius": 32,
+  "skip_existing_chunks": false,
+  "conditions": []
+}

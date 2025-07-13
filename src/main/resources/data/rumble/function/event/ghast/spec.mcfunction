@@ -1,0 +1,21 @@
+gamemode spectator 1
+gamemode spectator 2
+gamemode spectator 3
+gamemode spectator 4
+gamemode spectator 5
+gamemode spectator 6
+gamemode spectator 7
+gamemode spectator 8
+gamemode spectator 9
+gamemode spectator 10
+
+spectate @e[type=happy_ghast,limit=1,team=e1] 1
+spectate @e[type=happy_ghast,limit=1,team=e2] 2
+spectate @e[type=happy_ghast,limit=1,team=e3] 3
+spectate @e[type=happy_ghast,limit=1,team=e4] 4
+spectate @e[type=happy_ghast,limit=1,team=e5] 5
+spectate @e[type=happy_ghast,limit=1,team=e6] 6
+spectate @e[type=happy_ghast,limit=1,team=e7] 7
+spectate @e[type=happy_ghast,limit=1,team=e8] 8
+spectate @e[type=happy_ghast,limit=1,team=e9] 9
+spectate @e[type=happy_ghast,limit=1,team=e10] 10

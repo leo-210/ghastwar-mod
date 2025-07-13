@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["ccc", "cCc", "ccc"],
+  "key": {
+    "c": "minecraft:bedrock",
+    "C": "minecraft:compass"
+  },
+  "result": {
+    "id": "minecraft:filled_map",
+    "components": {
+      "minecraft:custom_data": { "trial": true },
+      "minecraft:consumable": {
+        "consume_seconds": 0,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:play_sound",
+            "sound": "minecraft:entity.firework_rocket.twinkle"
+          }
+        ]
+      },
+      "minecraft:custom_name": "Click droit pour m'ouvrir!"
+    },
+    "count": 1
+  },
+  "show_notification": false
+}

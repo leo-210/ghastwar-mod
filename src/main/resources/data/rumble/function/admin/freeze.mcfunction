@@ -1,0 +1,1 @@
+data merge entity @n[type=minecraft:happy_ghast] {NoAI:1}

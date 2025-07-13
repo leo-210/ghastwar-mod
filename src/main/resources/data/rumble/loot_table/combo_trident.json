@@ -1,0 +1,252 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "rain_star": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "toot_horn",
+                  "sound": "block.amethyst_block.resonate",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:play_sound",
+                      "sound": "block.amethyst_block.chime"
+                    }
+                  ]
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 120
+                },
+                "minecraft:max_stack_size": 1
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "#05D5FF",
+                  "italic": false,
+                  "text": "R"
+                },
+                {
+                  "bold": true,
+                  "color": "#04CBFF",
+                  "italic": false,
+                  "text": "a"
+                },
+                {
+                  "bold": true,
+                  "color": "#04C2FF",
+                  "italic": false,
+                  "text": "i"
+                },
+                {
+                  "bold": true,
+                  "color": "#03B8FF",
+                  "italic": false,
+                  "text": "n "
+                },
+                {
+                  "bold": true,
+                  "color": "#03AFFF",
+                  "italic": false,
+                  "text": "S"
+                },
+                {
+                  "bold": true,
+                  "color": "#02A5FF",
+                  "italic": false,
+                  "text": "t"
+                },
+                {
+                  "bold": true,
+                  "color": "#019BFF",
+                  "italic": false,
+                  "text": "a"
+                },
+                {
+                  "bold": true,
+                  "color": "#0088FF",
+                  "italic": false,
+                  "text": "r"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "color": "white",
+                  "italic": false,
+                  "text": "Permet d'invoquer la pluie"
+                },
+                {
+                  "color": "white",
+                  "italic": false,
+                  "text": "pendant 30 secondes"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 12,
+                "minecraft:enchantments": {
+                  "minecraft:riptide": 2
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "gravity",
+                    "type": "gravity",
+                    "amount": -0.04,
+                    "operation": "add_value",
+                    "slot": "any",
+                    "display": {
+                      "type": "hidden"
+                    }
+                  },
+                  {
+                    "id": "fall_damage_multiplier",
+                    "type": "fall_damage_multiplier",
+                    "amount": -0.5,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "hidden"
+                    }
+                  },
+                  {
+                    "id": "attack_damage",
+                    "type": "attack_damage",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "display": {
+                      "type": "default"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "white",
+                  "italic": false,
+                  "text": "Foudre des "
+                },
+                {
+                  "color": "#086BFF",
+                  "text": "P"
+                },
+                {
+                  "color": "#0862FF",
+                  "text": "r"
+                },
+                {
+                  "color": "#095AFF",
+                  "text": "o"
+                },
+                {
+                  "color": "#0951FF",
+                  "text": "f"
+                },
+                {
+                  "color": "#0A49FF",
+                  "text": "o"
+                },
+                {
+                  "color": "#0A40FF",
+                  "text": "n"
+                },
+                {
+                  "color": "#0B38FF",
+                  "text": "d"
+                },
+                {
+                  "color": "#0B2FFF",
+                  "text": "e"
+                },
+                {
+                  "color": "#0C27FF",
+                  "text": "u"
+                },
+                {
+                  "color": "#0C1EFF",
+                  "text": "r"
+                },
+                {
+                  "color": "#0D0DFF",
+                  "text": "s"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [
+                  {
+                    "color": "white",
+                    "italic": false,
+                    "text": "Dégats de chute réduit de"
+                  },
+                  {
+                    "color": "green",
+                    "text": " 50%"
+                  }
+                ],
+                [
+                  {
+                    "color": "white",
+                    "italic": false,
+                    "text": "Gravité réduite de "
+                  },
+                  {
+                    "color": "green",
+                    "text": "50%"
+                  }
+                ]
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

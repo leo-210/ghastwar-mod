@@ -1,0 +1,1 @@
+attribute @n[type=happy_ghast] minecraft:flying_speed base set 0.2
