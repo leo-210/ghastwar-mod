@@ -6,5 +6,5 @@ It runs on Fabric 1.21.7, and depends on the [Carpet Mod](https://github.com/gne
 
 ## Credit
 
-@nryco for the "datapack" part.
+[@nryco](https://github.com/nryco) for the "datapack" part.
  
