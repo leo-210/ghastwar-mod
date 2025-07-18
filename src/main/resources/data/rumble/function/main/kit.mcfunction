@@ -58,7 +58,7 @@ item replace entity @s[team=e10] armor.legs with leather_leggings[dyed_color=427
 item replace entity @s[team=e10] armor.feet with leather_boots[dyed_color=42752,enchantments={"minecraft:unbreaking":10,feather_falling:4,"vanishing_curse":1}]
 
 
-give @s bread[enchantments={"vanishing_curse":1},enchantment_glint_override=false,tooltip_display={hidden_components:[enchantments]}] 64
+give @s bread[enchantments={"vanishing_curse":1},enchantment_glint_override=false,tooltip_display={hidden_components:[enchantments]}] 32
 #give @s bundle
 #give @s ender_chest[enchantments={"vanishing_curse":1},enchantment_glint_override=false,tooltip_display={hidden_components:[enchantments]}] 3
 
@@ -66,6 +66,6 @@ give @s lead[enchantments={"vanishing_curse":1},enchantment_glint_override=true,
 give @s nautilus_shell[enchantments={"vanishing_curse":1},enchantment_glint_override=false,tooltip_display={hidden_components:[enchantments]}]
 
 give @s bow[enchantments={"minecraft:vanishing_curse":1}]
-give @s arrow[enchantments={"vanishing_curse":1},enchantment_glint_override=false,tooltip_display={hidden_components:[enchantments]}] 12
+give @s arrow[tooltip_display={hidden_components:[enchantments]}] 12
 
-give @s hay_block
+#give @s hay_block

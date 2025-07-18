@@ -1,6 +1,6 @@
 kill @e[tag=cargo]
 scoreboard players set .count cargoCount 6
-tellraw @a [{text:"[RUMBLE] ",color:"gold"},{text:"Des cargos vont apparaîtres, pour les ouvrir utilisez des diamants !",color:"white"}]
+tellraw @a [{text:"[Ghast War] ",color:"gold"},{text:"Des cargos vont apparaîtres, pour les ouvrir utilisez des diamants !",color:"white"}]
 title @a title {text: "Cargo !", color: "gold"}
 schedule function cargo:spawn 1s
 

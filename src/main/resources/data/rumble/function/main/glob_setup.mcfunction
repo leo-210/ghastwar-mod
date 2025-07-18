@@ -1,6 +1,7 @@
 scoreboard objectives add Kills playerKillCount
-scoreboard objectives setdisplay sidebar Kills
+scoreboard players reset @a Kills
 
+scoreboard objectives setdisplay list Kills
 say Rumble V.3 Loaded
 
 # Système de vie avec objectives
@@ -12,7 +13,7 @@ scoreboard objectives add morts deathCount "Morts"
 # 2. Donne un nombre de vies de départ à chaque joueur (au départ vies pas limitées)
 scoreboard players set @a vies 1000
 
-scoreboard objectives setdisplay list vies
+
 
 scoreboard objectives add chooseTeam trigger
 scoreboard players enable @a chooseTeam

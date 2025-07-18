@@ -1,5 +1,5 @@
 # Send a message to all players that Ghast team 1 has been eliminated
-tellraw @a [{"text":"[Rumble] ","color":"gold"},{"text":"Le Ghast de l'équipe 9 a été éliminé !","color":"yellow"}]
+tellraw @a [{"text":"[Ghast War] ","color":"gold"},{"text":"Le Ghast de l'équipe 9 a été éliminé !","color":"yellow"}]
 execute at 9 run particle minecraft:explosion_emitter ~ ~1 ~ 1 1 1 10 1 force
 execute at 9 run playsound minecraft:entity.generic.explode master @a[distance=..32] ~ ~ ~
 
